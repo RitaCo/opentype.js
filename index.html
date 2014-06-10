@@ -31,7 +31,7 @@
     <span class="info" id="font-name">Roboto-Black</span>
     <canvas id="preview" width="940" height="300" class="text"></canvas>
     <div id="message"></div>
-    <input type="text" class="text-input" onkeyup="renderText()" value="Hello, World!"
+    <input type="text" class="text-input" onkeyup="renderText()" value="سلام، دنیا!"
            autofocus id="textField">
     <label>Font Size<input type="range" min="6" max="500" step="2" value="150" id="font-size-range" autocomplete="off"><span id="fontSize">150</span></label>
     <label><input type="checkbox" onchange="drawPointsChanged(this)" checked="checked">Draw Points</label>
@@ -76,7 +76,7 @@
 <script type="text/javascript">
 var font = null;
 var fontSize = 150;
-var textToRender = "Hello, World!";
+var textToRender = "سلام، دنیا";
 var drawPoints = true;
 var drawMetrics = false;
 var kerning = true;
@@ -247,7 +247,7 @@ function onReadFile(e) {
     reader.readAsArrayBuffer(file);
 }
 
-var fontFileName = 'fonts/Roboto-Black.ttf';
+var fontFileName = 'fonts/AdobeArabic-Regular.otf';
 
 document.getElementById('font-name').innerHTML = fontFileName.split('/')[1];
 
